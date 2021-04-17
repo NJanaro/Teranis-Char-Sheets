@@ -1,0 +1,193 @@
+<div>
+
+    <!-- Headering with Char name and Player name and Race -->
+    <div class="sheet-image">
+        <div class="sheet-title-works">Teranis</div>
+    </div>
+    <div class="sheet-names-box">
+        <div class="sheet-character-name">
+            <label class="sheet-headering">Character:</label>
+            <input class="sheet-names" type="text" name="attr_character_name"/>
+        </div>
+        <div class="sheet-player-name">
+            <label class="sheet-headering">Player:</label>
+            <input class="sheet-names" type="text" name="attr_player_name"/>
+        </div>
+    </div>
+    <div class="sheet-names-box">
+        <div class="sheet-player-name">
+            <label class="sheet-headering">Race:</label>
+            <input class="sheet-names" type="text" name="attr_race"/>
+        </div>
+        <div class="sheet-player-name">
+            <label class="sheet-headering">XP:</label>
+            <input class="sheet-names" type="number" name="attr_XP"/>
+        </div>
+    </div>
+    <!-- Core Stats -->
+
+    <h2>Core Stats</h2>
+    <div class="sheet-core-stats">
+       
+       <div class="sheet-stats-box">
+           
+            <div class="sheet-stats-column">
+                <label class="sheet-shorter" style="visibility: hidden;">" "</label>
+                <label class="sheet-headering">Max HP:</label>
+                <label class="sheet-headering">Current HP:</label>
+                <label class="sheet-headering">Unconscious:</label>
+                <label class="sheet-headering">Death:</label>
+            </div>
+            <div class="sheet-stats-column">
+                <label class="sheet-shorter" style="visibility: hidden;">" "</label>
+                <input class="sheet-shorter sheet-rowing" type="number" name="attr_health" />
+                <input class="sheet-shorter sheet-rowing" type="number" name="attr_currentHP" />
+                <input class="sheet-shorter sheet-rowing" type="number" name="attr_uncon" />
+                <input class="sheet-shorter sheet-rowing" type="number" name="attr_death" />
+              
+            </div>
+            <div class="sheet-stats-column">
+                <label class="sheet-shorter" style="visibility: hidden;">" "</label>
+                <label class="sheet-headering">Max Luck</label>
+                <label class="sheet-headering">Current Luck</label>
+                <label class="sheet-headering">Magic Power</label>
+            </div>
+            <div class="sheet-stats-column">
+                <label class="sheet-shorter" style="visibility: hidden;">" "</label>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_max_luck" />
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_current_luck" />
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_magic_power" />
+                </div>
+            </div>on</label>
+                <label class="sheet-headering">Frame</label>
+            </div>
+            
+            <div class="sheet-stats-column">
+                <div class="sheet-rowing">
+                    <label class="sheet-shorter" style="margin:auto;">Base</label>
+                    <label class="sheet-shorter" style="margin:auto;">Bonus</label>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_strength" />
+                    <input class="sheet-shorter" type="number" name="attr_strength_mod" readonly />
+                    <button type="roll" value="/roll 1d20 + @{strength_mod}[Strength]" name="roll_strengthMod"></button>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_dexterity" />
+                    <input class="sheet-shorter" type="number" name="attr_dexterity_mod" readonly />
+                    <button type="roll" value="/roll 1d20 + @{dexterity_mod}[Dexterity]" name="roll_dexterityMod"></button>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_agility" />
+                    <input class="sheet-shorter" type="number" name="attr_agility_mod" readonly />
+                    <button type="roll" value="/roll 1d20 + @{agility_mod}[Agility]" name="roll_agilityMod"></button>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_constitution" />
+                    <input class="sheet-shorter" type="number" name="attr_constitution_mod" readonly />
+                    <button type="roll" value="/roll 1d20 + @{constitution_mod}[Constitution]" name="roll_constitutionMod"></button>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_frame" />
+                    <input class="sheet-shorter" type="number" name="attr_frame_mod"readonly />
+                    <button type="roll" value="/roll 1d20 + @{frame_mod}[Frame]" name="roll_frameMod"></button>
+                </div>
+            </div>
+
+            <div class="sheet-stats-column">
+                <label class="sheet-shorter" style="visibility: hidden;">" "</label>
+                <label class="sheet-headering">Intelligence</label>
+                <label class="sheet-headering">Willpower</label>
+                <label class="sheet-headering">Perception</label>
+                <label class="sheet-headering">Charisma</label>
+                <label class="sheet-headering">Wisdom</label>
+            </div>
+
+            <div class="sheet-stats-column">
+                <div class="sheet-rowing">
+                    <label class="sheet-shorter" style="margin:auto;">Base</label>
+                    <label class="sheet-shorter" style="margin:auto;">Bonus</label>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_intelligence" />
+                    <input class="sheet-shorter" type="number" name="attr_intelligence_mod" readonly/>
+                    <button type="roll" value="/roll 1d20 + @{intelligence_mod}[Intelligence]" name="roll_intelligenceMod"></button>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_willpower" />
+                    <input class="sheet-shorter" type="number" name="attr_willpower_mod" readonly/>
+                    <button type="roll" value="/roll 1d20 + @{willpower_mod}[Willpower]" name="roll_willpowerMod"></button>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_perception" />
+                    <input class="sheet-shorter" type="number" name="attr_perception_mod" readonly/>
+                    <button type="roll" value="/roll 1d20 + @{perception_mod}[Perception]" name="roll_perceptionMod"></button>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_charisma" />
+                    <input class="sheet-shorter" type="number" name="attr_charisma_mod" readonly/>
+                    <button type="roll" value="/roll 1d20 + @{charisma_mod}[Charisma]" name="roll_charismaMod"></button>
+                </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" type="number" name="attr_wisdom" />
+                    <input class="sheet-shorter" type="number" name="attr_wisdom_mod" readonly/>
+                    <button type="roll" value="/roll 1d20 + @{wisdom_mod}[Wisdom]" name="roll_wisdomMod"></button>
+                </div>
+            </div>
+            
+
+            
+        </div>
+        <div class="sheet-center-break">Bonus: [1 to 4 = -2], [5 to 8 = -1], [9 to 13 = 0], [14 to 17 = +1], [18+ = +2]</div>
+        
+    </div>
+    
+    <div class="sheet-core-stats">
+        <h2>Skills</h2>
+
+        <fieldset class="repeating_skills"> 
+          <select name="attr_statBon" class="sheet-short"> 
+            <option value="@{strength_mod}">STR</option>
+            <option value="@{dextarity_mod}">DEX</option>
+            <option value="@{agility_mod}">AGI</option>
+            <option value="@{constitution_mod}">CON</option>
+            <option value="@{frame_mod}">FRM</option>
+            <option value="@{inteligence_mod}">INT</option>
+            <option value="@{willpower_mod}">WIL</option>
+            <option value="@{perception_mod}">PER</option>
+            <option value="@{charisma_mod}">CHR</option>            
+            <option value="@{wisdom_mod}">WIS</option>
+            <option value="0">N/A</option>
+          </select>
+          <input type="number" class="sheet-shorter" name="attr_skill_level" value="0" />
+          <input type="text" class="sheet-longer" name="attr_skillname" /> 
+          <button type="roll" value="/roll 1d20 + @{skill_level} + @{statBon}[@{skillname}]" name="roll_skillz"></button>
+        </fieldset>
+    </div>
+    <!--<div class="sheet-core-stats">-->
+    <!--    <h2>Attributes</h2>   -->
+    <!--    <textarea></textarea>-->
+    <!--</div>-->
+</div>
+
+<script type="text/worker">
+
+    const stats = ["strength","dexterity","agility","constitution","frame","intelligence","willpower","perception","charisma","wisdom"];
+    stats.forEach(stat => {
+        on(`change:${stat} sheet:opened`, () => {            getAttrs([stat], values => {
+                const stat_score = parseInt(values[stat], 10)||0;
+                let stat_modifier = Math.floor(stat_score)
+                stat_modifier >= 18 ? stat_modifier = 2 : stat_modifier >= 14 ? stat_modifier = 1 : stat_modifier >= 9 ? stat_modifier = 0 : stat_modifier >= 5 ? stat_modifier = -1 : stat_modifier = -2;
+                setAttrs({
+                    [`${stat}_mod`]: stat_modifier 
+                });
+            });
+        });
+    });
+
+</script>

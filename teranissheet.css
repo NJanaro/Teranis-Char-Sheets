@@ -1,0 +1,124 @@
+
+/* Universal styling applied to all elements of these types */
+
+h2 {
+	font-size: 2em;
+	margin: 0;
+	/* text-align: center; */
+	/*font-family: "MedievalSharp", cursive, Arial, Helvetica, sans-serif;*/
+}
+
+.sheet-headering {
+	/*display: inline-block;*/
+	/*margin-right: 10px;*/
+	/*font-family: "Tillana", cursive;*/
+	/*font-size: 24px;*/
+}
+
+.sheet-headering-bold {
+	/*display: inline-block;*/
+	/*margin-right: 10px;*/
+	/*font-family: "Tillana", cursive;*/
+	/*font-size: 24px;*/
+	/*font-weight: bold;*/
+}
+
+.sheet-names {
+	display: inline-block;
+	width: 200px;
+	border:none;
+	border-bottom: 1px solid black;
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+.sheet-stats-box {
+	display:flex;
+}
+
+.sheet-names-box{
+	display: flex;
+	justify-content: space-between;
+}
+
+.sheet-core-stats {
+	display:flex;
+	flex-direction: column;
+	width:450px;
+	/*height:500px;*/
+	padding: 15px;
+	/*border: solid black 1px;*/
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+input {
+    /*height:24px;*/
+}
+
+input:focus {
+	outline:none!important;
+}
+
+
+textarea {
+	resize: vertical;
+}
+
+	width: 90px;
+	height:24px;
+	/*margin: 2px;*/
+	text-align: center;
+}
+
+.sheet-shorter {
+	box-sizing:border-box;
+	width: 50px;
+	height:24px;
+	margin: 2px;
+	text-align: center;
+}
+
+.sheet-longer {
+    	box-sizing:border-box;
+	width: 250px;
+	height:24px;
+	margin: 2px;
+	text-align: center;
+}
+
+.sheet-image {
+	display: flex;
+	justify-content: space-around;
+}
+
+.sheet-title-works {
+	/* color: black; */
+	/* text-shadow: rgb(0, 0, 0) 1px 0 10px; */
+    text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+
+	font-size: 82px;
+	font-weight: bold;
+	/*font-family: "MedievalSharp", cursive, Arial, Helvetica, sans-serif;*/
+	display: flex;
+	align-items: center;
+}
+
+.sheet-center-break {
+	display: flex;
+	align-items: center;
+}
