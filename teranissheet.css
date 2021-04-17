@@ -75,7 +75,22 @@ input:focus {
 textarea {
 	resize: vertical;
 }
-
+
+/* Targetted styling that only effects elements with these classes */
+
+.sheet-rowing {
+	display:flex;
+	/*justify-content: space-between;*/
+}
+
+.sheet-stats-column {
+	display:flex;
+	flex-direction: column;
+	margin-left: 8px;
+}
+
+.sheet-short {
+	box-sizing:border-box;
 	width: 90px;
 	height:24px;
 	/*margin: 2px;*/

@@ -63,7 +63,17 @@
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_magic_power" />
                 </div>
-            </div>on</label>
+            </div>
+            
+       </div>
+
+        <div class="sheet-stats-box">
+            <div class="sheet-stats-column">
+                <label class="sheet-shorter" style="visibility: hidden;">" "</label>
+                <label class="sheet-headering">Strength</label>
+                <label class="sheet-headering">Dexterity</label>
+                <label class="sheet-headering">Agility</label>
+                <label class="sheet-headering">Constitution</label>
                 <label class="sheet-headering">Frame</label>
             </div>
             
@@ -75,31 +85,31 @@
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_strength" />
                     <input class="sheet-shorter" type="number" name="attr_strength_mod" readonly />
-                    <button type="roll" value="/roll 1d20 + @{strength_mod}[Strength]" name="roll_strengthMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{strength}[Strength]" name="roll_strengthMod"></button>
                 </div>
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_dexterity" />
                     <input class="sheet-shorter" type="number" name="attr_dexterity_mod" readonly />
-                    <button type="roll" value="/roll 1d20 + @{dexterity_mod}[Dexterity]" name="roll_dexterityMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{dexterity}[Dexterity]" name="roll_dexterityMod"></button>
                 </div>
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_agility" />
                     <input class="sheet-shorter" type="number" name="attr_agility_mod" readonly />
-                    <button type="roll" value="/roll 1d20 + @{agility_mod}[Agility]" name="roll_agilityMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{agility}[Agility]" name="roll_agilityMod"></button>
                 </div>
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_constitution" />
                     <input class="sheet-shorter" type="number" name="attr_constitution_mod" readonly />
-                    <button type="roll" value="/roll 1d20 + @{constitution_mod}[Constitution]" name="roll_constitutionMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{constitution}[Constitution]" name="roll_constitutionMod"></button>
                 </div>
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_frame" />
                     <input class="sheet-shorter" type="number" name="attr_frame_mod"readonly />
-                    <button type="roll" value="/roll 1d20 + @{frame_mod}[Frame]" name="roll_frameMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{frame}[Frame]" name="roll_frameMod"></button>
                 </div>
             </div>
 
-            <div class="sheet-stats-column">
+            <div class="sheet-stats-column">
                 <label class="sheet-shorter" style="visibility: hidden;">" "</label>
                 <label class="sheet-headering">Intelligence</label>
                 <label class="sheet-headering">Willpower</label>
@@ -116,27 +126,27 @@
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_intelligence" />
                     <input class="sheet-shorter" type="number" name="attr_intelligence_mod" readonly/>
-                    <button type="roll" value="/roll 1d20 + @{intelligence_mod}[Intelligence]" name="roll_intelligenceMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{intelligence}[Intelligence]" name="roll_intelligenceMod"></button>
                 </div>
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_willpower" />
                     <input class="sheet-shorter" type="number" name="attr_willpower_mod" readonly/>
-                    <button type="roll" value="/roll 1d20 + @{willpower_mod}[Willpower]" name="roll_willpowerMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{willpower}[Willpower]" name="roll_willpowerMod"></button>
                 </div>
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_perception" />
                     <input class="sheet-shorter" type="number" name="attr_perception_mod" readonly/>
-                    <button type="roll" value="/roll 1d20 + @{perception_mod}[Perception]" name="roll_perceptionMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{perception}[Perception]" name="roll_perceptionMod"></button>
                 </div>
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_charisma" />
                     <input class="sheet-shorter" type="number" name="attr_charisma_mod" readonly/>
-                    <button type="roll" value="/roll 1d20 + @{charisma_mod}[Charisma]" name="roll_charismaMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{charisma}[Charisma]" name="roll_charismaMod"></button>
                 </div>
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_wisdom" />
                     <input class="sheet-shorter" type="number" name="attr_wisdom_mod" readonly/>
-                    <button type="roll" value="/roll 1d20 + @{wisdom_mod}[Wisdom]" name="roll_wisdomMod"></button>
+                    <button type="roll" value="/roll 1d20 + @{wisdom}[Wisdom]" name="roll_wisdomMod"></button>
                 </div>
             </div>
             
@@ -153,11 +163,11 @@
         <fieldset class="repeating_skills"> 
           <select name="attr_statBon" class="sheet-short"> 
             <option value="@{strength_mod}">STR</option>
-            <option value="@{dextarity_mod}">DEX</option>
-            <option value="@{agility_mod}">AGI</option>
+            <option value="@{dexterity_mod}">DEX</option>
+            <option value="@{agility_mod}">AGL</option>
             <option value="@{constitution_mod}">CON</option>
             <option value="@{frame_mod}">FRM</option>
-            <option value="@{inteligence_mod}">INT</option>
+            <option value="@{intelligence_mod}">INT</option>
             <option value="@{willpower_mod}">WIL</option>
             <option value="@{perception_mod}">PER</option>
             <option value="@{charisma_mod}">CHR</option>            
