@@ -105,6 +105,14 @@ textarea {
 	text-align: center;
 }
 
+.sheet-long {
+	box-sizing:border-box;
+	width: 125px;
+	height:24px;
+	margin: 2px;
+	text-align: center;    
+}
+
 .sheet-longer {
     	box-sizing:border-box;
 	width: 250px;

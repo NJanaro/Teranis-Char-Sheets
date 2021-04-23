@@ -174,15 +174,26 @@
             <option value="@{wisdom_mod}">WIS</option>
             <option value="0">N/A</option>
           </select>
-          <input type="number" class="sheet-shorter" name="attr_skill_level" value="0" />
-          <input type="text" class="sheet-longer" name="attr_skillname" /> 
+          <input type="number" class="sheet-shorter" name="attr_skill_level" placeholder="0" />
+          <input type="text" class="sheet-longer" placeholder="Skill Name" name="attr_skillname" /> 
           <button type="roll" value="/roll 1d20 + @{skill_level} + @{statBon}[@{skillname}]" name="roll_skillz"></button>
         </fieldset>
     </div>
-    <!--<div class="sheet-core-stats">-->
-    <!--    <h2>Attributes</h2>   -->
-    <!--    <textarea></textarea>-->
-    <!--</div>-->
+    <div class="sheet-core-stats">
+        <h2>Weapons</h2>
+        
+        <fieldset class="repeating_skills">
+            <select name="attr_weapon_slot" class="sheet-long"> 
+              <option name="attr_shoulder_left">Shoulder Left</option>
+              <option name="attr_shoulder_right">Shoulder Right</option>
+              <option name="attr_hip_left">Hip Left</option>
+              <option name="attr_hip_right">Hip Right</option>
+            </select>
+            <input type="text" class="sheet-long" placeholder="Weapon Name" name="attr_weapon_name" />
+            <input type="text" class="sheet-shorter" placeholder="DMG" name="attr_weapon_data" />
+            <button type="roll" value="/roll @{weapon_data}[@{weapon_name}]" />
+        </fieldset>
+    </div>
 </div>
 
 <script type="text/worker">
@@ -199,5 +210,16 @@
             });
         });
     });
+    
+    // const slots = ["shoulder_left", "shoulder_right", "hip_left", "hip_right"];
+    // slots.forEach(slot => {
+    //     on("sheet:opened", ()=>{
+        
+    //         getAttrs([slot] =>{
+                
+    //         })
+    //     })
+        
+    // })
 
 </script>
