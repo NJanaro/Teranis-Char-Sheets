@@ -176,7 +176,8 @@
           </select>
           <input type="number" class="sheet-shorter" name="attr_skill_level" placeholder="0" />
           <input type="text" class="sheet-longer" placeholder="Skill Name" name="attr_skillname" /> 
-          <button type="roll" value="/roll 1d20 + @{skill_level} + @{statBon}[@{skillname}]" name="roll_skillz"></button>
+
+          <button type="roll" value="/roll {1d20 + @{skill_level} + @{statBon}}>14[@{skillname}]" name="roll_skillz"></button>
         </fieldset>
     </div>
     <div class="sheet-core-stats">
