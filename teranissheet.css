@@ -23,6 +23,10 @@ h2 {
 	/*font-weight: bold;*/
 }
 
+.sheet-initiative-roller {
+    color:red;
+}
+
 .sheet-names {
 	display: inline-block;
 	width: 200px;

@@ -75,13 +75,17 @@
                 <label class="sheet-headering">Agility</label>
                 <label class="sheet-headering">Constitution</label>
                 <label class="sheet-headering">Frame</label>
+                <label class="sheet-headering sheet-initiative-roller">Initiative</label>
             </div>
             
             <div class="sheet-stats-column">
+                
                 <div class="sheet-rowing">
                     <label class="sheet-shorter" style="margin:auto;">Base</label>
                     <label class="sheet-shorter" style="margin:auto;">Bonus</label>
                 </div>
+                
+
                 <div class="sheet-rowing">
                     <input class="sheet-shorter" type="number" name="attr_strength" />
                     <input class="sheet-shorter" type="number" name="attr_strength_mod" readonly />
@@ -107,6 +111,10 @@
                     <input class="sheet-shorter" type="number" name="attr_frame_mod"readonly />
                     <button type="roll" value="/roll 1d20 + @{frame}[Frame]" name="roll_frameMod"></button>
                 </div>
+                <div class="sheet-rowing">
+                    <input class="sheet-shorter" placeholder="weight" type="number" name="attr_weight_mod"/>
+                    <button type="roll" value="/roll 1d6 + @{agility_mod}[agility mod] - @{weight_mod}[torso armor weight]" name="roll_initiativeMod"></button>
+                </div>                
             </div>
 
             <div class="sheet-stats-column">
@@ -176,8 +184,7 @@
           </select>
           <input type="number" class="sheet-shorter" name="attr_skill_level" placeholder="0" />
           <input type="text" class="sheet-longer" placeholder="Skill Name" name="attr_skillname" /> 
-
-          <button type="roll" value="/roll {1d20 + @{skill_level} + @{statBon}}>14[@{skillname}]" name="roll_skillz"></button>
+          <button type="roll" value="/roll 1d20 + @{skill_level} + @{statBon}[@{skillname}]" name="roll_skillz"></button>
         </fieldset>
     </div>
     <div class="sheet-core-stats">
